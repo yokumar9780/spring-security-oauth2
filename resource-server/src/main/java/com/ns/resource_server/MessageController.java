@@ -1,4 +1,4 @@
-package com.yogesh.resource_server;
+package com.ns.resource_server;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-public class ResourceServerController {
+public class MessageController {
 
     @GetMapping("/")
     public String index(@AuthenticationPrincipal Jwt jwt) {

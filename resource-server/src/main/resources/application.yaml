@@ -5,23 +5,12 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          jwk-set-uri: http://localhost:9001/oauth2/jwks
+          jwk-set-uri: http://localhost:9000/oauth2/jwks
 
 server:
-  port: 9002
+  port: 9001
 
 logging:
   level:
     org.springframework.security: trace
 
----
-# Profile specific configuration for 'test'
-spring:
-  config:
-    activate:
-      on-profile: test
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          jwk-set-uri: ${mock.webserver.url}/.well-known/jwks.json

@@ -1,4 +1,4 @@
-package com.yogesh.authorization_server;
+package com.ns.authorization_server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

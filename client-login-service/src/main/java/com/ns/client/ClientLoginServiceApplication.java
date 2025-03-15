@@ -1,13 +1,13 @@
-package com.yogesh.resource_server;
+package com.ns.client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ResourceServerApplication {
+public class ClientLoginServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ResourceServerApplication.class, args);
+        SpringApplication.run(ClientLoginServiceApplication.class, args);
     }
 
 }

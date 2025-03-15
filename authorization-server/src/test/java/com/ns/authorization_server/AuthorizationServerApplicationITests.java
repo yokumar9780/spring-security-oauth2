@@ -1,4 +1,4 @@
-package com.yogesh.authorization_server;
+package com.ns.authorization_server;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -104,7 +104,7 @@ class AuthorizationServerApplicationITests {
                 .andExpect(jsonPath("$.client_id").value(CLIENT_ID))
                 .andExpect(jsonPath("$.exp").isNumber())
                 .andExpect(jsonPath("$.iat").isNumber())
-                .andExpect(jsonPath("$.iss").value("http://localhost:9001"))
+                .andExpect(jsonPath("$.iss").value("http://localhost:9000"))
                 .andExpect(jsonPath("$.nbf").isNumber())
                 .andExpect(jsonPath("$.scope").value("message:read"))
                 .andExpect(jsonPath("$.sub").value(CLIENT_ID))
